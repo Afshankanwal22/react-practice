@@ -20,7 +20,7 @@ export default function Home() {
         <h2 className="mt-2 text-gray-600 text-center max-w-md font-bold">
             The library for web and native user interfaces
             </h2>
-           {/* Reusable Buttons side by side */}
+          {/* Reusable Buttons side by side */}
 <div className="flex space-x-4 mt-4">
   <Button className="bg-sky-600 hover:bg-sky-700 text-white font-semibold rounded-full px-6 py-2 transition duration-300">
     Learn React
@@ -29,9 +29,7 @@ export default function Home() {
     API Reference
   </Button>
 </div>
-
-
-
     </div>
+    
   );
 }
