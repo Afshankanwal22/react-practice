@@ -11,8 +11,6 @@ function App() {
       <Navbar />
       <Home />
       <Section />
-
-
       <main className="flex-grow">
         {/* Main content goes here */}
       </main>
