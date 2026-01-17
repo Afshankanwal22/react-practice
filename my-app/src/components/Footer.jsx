@@ -2,71 +2,86 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-200 mt-12">
-      <div className=" mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-6 gap-8">
+    <footer className="bg-gray-900 text-gray-300 mt-20">
+      
+      {/* TOP FOOTER */}
+      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-10">
 
-        {/* Brand / About */}
-        <div>
-          <h2 className="text-xl font-bold mb-4">React</h2>
-          <p className="text-gray-400">
-          Copyright © Meta Platforms, Inc uwu?
+        {/* BRAND */}
+        <div className="md:col-span-2">
+          <div className="flex items-center gap-3 mb-4">
+            <img src="/logo_dark.svg" alt="React Logo" className="w-10 h-10" />
+            <h2 className="text-2xl font-bold text-white">React</h2>
+          </div>
+          <p className="text-gray-400 leading-relaxed">
+            A JavaScript library for building user interfaces.
+            Maintained by Meta and a community of developers.
           </p>
         </div>
 
-        {/* Learn React */}
+        {/* LEARN */}
         <div>
-          <h2 className="font-semibold mb-4">Learn React</h2>
-          <ul className="space-y-2">
-            <li><a href="#" className="hover:text-white">Quick Start</a></li>
-            <li><a href="#" className="hover:text-white">Installation</a></li>
-            <li><a href="#" className="hover:text-white">Describing the UI</a></li>
-            <li><a href="#" className="hover:text-white">Adding Interactivity</a></li>
-            <li><a href="#" className="hover:text-white">Managing State</a></li>
-            <li><a href="#" className="hover:text-white">Escape Hatches</a></li>
-          </ul>
-        </div>
-        {/* API Reference */}
-        <div>
-          <h2 className="font-semibold mb-4">API Reference</h2>
-          <ul className="space-y-2">
-            <li><a href="#" className="hover:text-white">React APIs</a></li>
-            <li><a href="#" className="hover:text-white">React DOM APIs</a></li>
+          <h3 className="text-sm font-semibold text-white uppercase tracking-wide mb-4">
+            Learn React
+          </h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#" className="hover:text-white transition">Quick Start</a></li>
+            <li><a href="#" className="hover:text-white transition">Installation</a></li>
+            <li><a href="#" className="hover:text-white transition">Describing the UI</a></li>
+            <li><a href="#" className="hover:text-white transition">Adding Interactivity</a></li>
+            <li><a href="#" className="hover:text-white transition">Managing State</a></li>
+            <li><a href="#" className="hover:text-white transition">Escape Hatches</a></li>
           </ul>
         </div>
 
-         {/* Community */}
+        {/* API */}
         <div>
-          <h2 className="font-semibold mb-4">Community</h2>
-          <ul className="space-y-2">
-            <li><a href="#" className="hover:text-white">Code of Conduct</a></li>
-            <li><a href="#" className="hover:text-white">Meet the Team</a></li>
-            <li><a href="#" className="hover:text-white">Docs Contributors</a></li>
-            <li><a href="#" className="hover:text-white">Acknowledgements</a></li>
+          <h3 className="text-sm font-semibold text-white uppercase tracking-wide mb-4">
+            API Reference
+          </h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#" className="hover:text-white transition">React APIs</a></li>
+            <li><a href="#" className="hover:text-white transition">React DOM APIs</a></li>
           </ul>
         </div>
 
-        {/* Social Media */}
+        {/* COMMUNITY */}
         <div>
-          <h2 className="font-semibold mb-4">More</h2>
-          <div className="flex space-x-4">
-
-            <ul className="space-y-2">
-            <li><a href="#" className="hover:text-white">Blog</a></li>
-            <li><a href="#" className="hover:text-white">React Native</a></li>
-            <li><a href="#" className="hover:text-white">Privacy</a></li>
-            <li><a href="#" className="hover:text-white">Terms</a></li>
+          <h3 className="text-sm font-semibold text-white uppercase tracking-wide mb-4">
+            Community
+          </h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#" className="hover:text-white transition">Code of Conduct</a></li>
+            <li><a href="#" className="hover:text-white transition">Meet the Team</a></li>
+            <li><a href="#" className="hover:text-white transition">Docs Contributors</a></li>
+            <li><a href="#" className="hover:text-white transition">Acknowledgements</a></li>
           </ul>
-
-
-            
-          </div>
         </div>
 
-        
+        {/* MORE */}
+        <div>
+          <h3 className="text-sm font-semibold text-white uppercase tracking-wide mb-4">
+            More
+          </h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#" className="hover:text-white transition">Blog</a></li>
+            <li><a href="#" className="hover:text-white transition">React Native</a></li>
+            <li><a href="#" className="hover:text-white transition">Privacy</a></li>
+            <li><a href="#" className="hover:text-white transition">Terms</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div className="border-t border-gray-700 text-center py-4 text-gray-500">
-        &copy; {new Date().getFullYear()} MyApp. All rights reserved.
+      {/* BOTTOM BAR */}
+      <div className="border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+          <p>
+            © {new Date().getFullYear()} React. All rights reserved.
+          </p>
+          <p>
+            Copyright © Meta Platforms, Inc.
+          </p>
+        </div>
       </div>
     </footer>
   );
